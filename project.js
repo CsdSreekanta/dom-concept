@@ -9,6 +9,7 @@ document.getElementById('add-btn').addEventListener('click', function(){
     else{
         const mainContainer = document.getElementById('content-container');
        const tableContainer = document.createElement('tr');
+       tableContainer.classList.add('shadow')
        tableContainer.innerHTML=`<th scope="row">${count}</th>
        <td>${inputValue}</td>
        <td><button class="btn btn-danger delete-btn">Delete</button><button class="btn btn-success done-btn">Done</button></td>`;
