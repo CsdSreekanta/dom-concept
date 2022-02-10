@@ -15,25 +15,27 @@
 // const prime = document.getElementById('prime').style;
 // // console.log(prime).s;
 
-// let count = 0;
-// document.getElementById('add').addEventListener('click', function(e){
-//     // count = count + 1;
-// // document.getElementById('count').innerText = count;
+let count = 0;
+document.getElementById('add').addEventListener('click', function(e){
+    count = count + 1;
+document.getElementById('count').innerText = count;
 
  
-// });
+});
 
-// document.getElementById('minus').addEventListener('click', function(e){
-    // count = count-1;
+document.getElementById('minus').addEventListener('click', function(e){
+    count = count-1;
     // document.getElementById('count').innerText = count;
-    // if(count < 0){
-    //     document.getElementById('count').innerText = 0;
-    //  }
-    //  else{
-    //     document.getElementById('count').innerText = count;
-    //  }
+    if(count < 0 ){
+       count=0;
+        document.getElementById('count').innerText = 0;
+       
+     }
+     else{
+        document.getElementById('count').innerText = count;
+     }
 
-// })
+})
 
 // function control(id){
 //     document.getElementById(id).innerText = count;
@@ -60,16 +62,16 @@
 // function control(id){
 //     document.getElementById(id).innerText = count;
 // }
-let count = 0;
-function add(e){
-    count++;
-    control("count");
-}
-function minus(e){
-    count--;
-    control('count');
-}
+// let count = 0;
+// function add(e){
+//     count++;
+//     control("count");
+// }
+// function minus(e){
+//     count--;
+//     control('count');
+// }
 
-function control(id){
-    document.getElementById(id).innerText = count;
-}
+// function control(id){
+//     document.getElementById(id).innerText = count;
+// }
